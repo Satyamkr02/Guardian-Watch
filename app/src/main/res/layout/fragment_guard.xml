@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvSecurityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="SECURITY"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/SOSCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/SOS_bgColor"
+        app:cardCornerRadius="24dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="@dimen/dimen_08dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSecurityTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="@dimen/dimen_16dp"
+        android:text="SOS"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/SOSCard"
+        app:layout_constraintTop_toTopOf="@+id/SOSCard" />
+
+    <TextView
+        android:id="@+id/SOS_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="222dp"
+        android:elevation="@dimen/dimen_16dp"
+        android:text="In case of emergency\nkeep telling family\nmembers to contact me"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/sos_image"
+        app:layout_constraintStart_toStartOf="@+id/SOSCard"
+        app:layout_constraintTop_toBottomOf="@id/tvSOS" />
+
+    <ImageView
+        android:id="@+id/sos_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/sos_image"
+        android:elevation="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SOSCard"
+        app:layout_constraintEnd_toEndOf="@+id/SOSCard"
+        app:layout_constraintTop_toTopOf="@+id/SOSCard" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/GuardCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/Guard_bgColor"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="@dimen/dimen_08dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SOSCard" />
+
+    <TextView
+        android:id="@+id/tvGuard"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Guard"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:elevation="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="@+id/GuardCard"
+        app:layout_constraintTop_toTopOf="@+id/GuardCard" />
+
+    <TextView
+        android:id="@+id/Guard_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="222dp"
+        android:elevation="@dimen/dimen_16dp"
+        android:text="Open when you are on a\npotentially dangerous\njourney"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guard_image"
+        app:layout_constraintStart_toStartOf="@+id/GuardCard"
+        app:layout_constraintTop_toBottomOf="@id/tvGuard" />
+
+    <ImageView
+        android:id="@+id/guard_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/guard_image"
+        android:layout_margin="16dp"
+        android:elevation="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/GuardCard"
+        app:layout_constraintEnd_toEndOf="@+id/GuardCard"
+        app:layout_constraintTop_toTopOf="@+id/GuardCard" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
