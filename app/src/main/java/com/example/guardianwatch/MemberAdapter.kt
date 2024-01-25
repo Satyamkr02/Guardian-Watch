@@ -29,7 +29,7 @@ class MemberAdapter( private val listMembers: List<MemberModel>) :
 
     class ViewHolder( private val item : View): RecyclerView.ViewHolder(item) {
 
-        val imageUser = item.findViewById<ImageView>(R.id.img_User)
+        val imageUser = item.findViewById<ImageView>(R.id.img_user)
         val nameUser = item.findViewById<TextView>(R.id.name_user)
 
     }

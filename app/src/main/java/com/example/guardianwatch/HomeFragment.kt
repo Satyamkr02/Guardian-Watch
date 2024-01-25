@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
             MemberModel("Esha Yadav"),
             MemberModel("Ashish"),
             MemberModel("Amit Ray"),
-            MemberModel("Saurabh Chauhan"),
+            MemberModel("Saurabh Chauhan"), 
             MemberModel("Shivam NCC DTU"),
             MemberModel("Swarit Singh"),
             MemberModel("Shivam"),
