@@ -28,11 +28,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/name_user"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_16dp"
-            android:text="Family Member's Name"
+            android:text="Lokesh Kedia"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_16sp"
             android:textStyle="bold"
@@ -45,9 +45,9 @@
             android:layout_height="16dp"
             android:layout_marginTop="12dp"
             android:src="@drawable/ic_location"
-            app:layout_constraintStart_toStartOf="@id/name_user"
-            app:layout_constraintTop_toBottomOf="@id/name_user"
-            app:tint="@color/Guard_bgColor" />
+            app:layout_constraintStart_toStartOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:tint="@color/green" />
 
         <TextView
             android:id="@+id/address"
@@ -57,11 +57,11 @@
             android:layout_marginTop="@dimen/dimen_08dp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:text=" DTU , Bawana , Shahbad Diary , Rohini"
+            android:text="9th buildind, 2nd floor, maldiv road, manali 9th buildind, 2nd floor 9th buildind, 2nd floor,"
             android:textColor="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/img_location"
-            app:layout_constraintTop_toBottomOf="@id/name_user" />
+            app:layout_constraintTop_toBottomOf="@id/name" />
 
         <TextView
             android:id="@+id/time"
@@ -71,7 +71,7 @@
             android:textColor="@android:color/darker_gray"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/name_user" />
+            app:layout_constraintTop_toTopOf="@id/name" />
 
 
         <LinearLayout
@@ -80,6 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_08dp"
             android:layout_marginTop="@dimen/dimen_16dp"
+
             android:orientation="horizontal"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
@@ -93,14 +94,13 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/battery_bar_good_health"
-                 />
+                app:tint="@color/green" />
 
             <TextView
                 android:id="@+id/battery_percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="1dp"
                 android:text="90%"
                 android:textColor="@color/green"
                 android:textStyle="bold" />
@@ -132,7 +132,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="1dp"
                 android:text="223M"
                 android:textColor="@android:color/darker_gray"
                 android:textStyle="bold"
@@ -169,7 +168,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="1dp"
                 android:text="WiFi"
                 android:textColor="@android:color/darker_gray"
                 android:textStyle="bold"
@@ -183,13 +181,10 @@
             android:id="@+id/img_call"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:padding="1dp"
             android:src="@drawable/ic_phone_call"
             app:layout_constraintBottom_toBottomOf="@id/lin_battery"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/lin_battery"
-            app:layout_constraintStart_toEndOf="@id/lin_wifi"
-             />
+            app:layout_constraintTop_toTopOf="@id/lin_battery" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
