@@ -29,11 +29,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-
-
             true
         }
 
+        bottomBar.selectedItemId = R.id.nav_home // ye humne yahan pe issliye likha hai kyunki jab hum app khole toh by default Home fragment pe rahe
 
     }
 
