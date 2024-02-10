@@ -12,4 +12,5 @@
     <color name="statusBarColor">#b3b5b7</color>
     <color name="light_green">#98fffb</color>
     <color name="green">#63d2c8</color>
+    <color name="btn_invite">#87E752</color>
 </resources>
