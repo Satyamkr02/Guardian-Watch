@@ -48,6 +48,24 @@ class HomeFragment : Fragment() {
         recycler.layoutManager = LinearLayoutManager( requireContext())
         recycler.adapter = adapter
 
+        val listContacts = listOf<ContactModel>(
+            ContactModel("Satyam" , 9383832324),
+            ContactModel("Suresh" , 9383832324),
+            ContactModel("Ramesh" , 9878290924),
+            ContactModel("Satyam2" , 9383832324),
+            ContactModel("Suresh2" , 9383832324),
+            ContactModel("Ramesh2" , 9878290924),
+            ContactModel("Satyam3" , 9383832324),
+            ContactModel("Suresh3" , 9383832324),
+            ContactModel("Ramesh3" , 9878290924),
+        )
+
+        val inviteAdapter = InviteAdapter(listContacts)
+
+        val inviteRecycler = requireView().findViewById<RecyclerView>(R.id.recycler_invite_card)
+        inviteRecycler.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL,false)
+        inviteRecycler.adapter = inviteAdapter
+
     }
 
     companion object {
