@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     val permissions = arrayOf(
         Manifest.permission.ACCESS_FINE_LOCATION,
         Manifest.permission.CAMERA,
+        Manifest.permission.READ_CONTACTS,
     )
 
     val permissionCode = 202
